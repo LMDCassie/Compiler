@@ -1,0 +1,57 @@
+temp0 := #5
+temp2 := #4
+temp1 := temp2 * temp0
+DEC m temp1
+FUNCTION f :
+PARAM m
+PARAM n
+temp3 := #1
+x = temp3
+temp4 := #10
+x = temp4
+temp5 = x > x
+IF x > x GOTO label0
+GOTO label1
+LABEL label0 :
+temp6 := #1
+temp7 = x + temp6
+x = temp7
+LABEL label1 :
+LABEL label2 :
+temp8 := #2
+temp9 = x != temp8
+IF x != temp8 GOTO label3
+GOTO label4
+LABEL label3 :
+temp10 := #1
+temp11 := #2
+temp12 = temp10 < temp11
+IF temp10 < temp11 GOTO label5
+GOTO label6
+LABEL label5 :
+temp13 := #3
+temp14 = m + temp13
+temp15 := #2
+temp16 = temp14 - temp15
+x = temp16
+GOTO label7
+LABEL label6 :
+x = a
+LABEL label7 :
+GOTO label2
+LABEL label4 :
+temp17 := #1
+RETURN temp17
+FUNCTION main :
+temp18 := #1
+ARG temp18
+temp19 := #2
+ARG temp19
+temp20 := CALL f
+a = temp20
+temp21 := #0
+temp24 := #4
+temp23 := temp21 * temp24
+temp22 := &m + temp23
+temp25 := #1
+*temp22 = temp25

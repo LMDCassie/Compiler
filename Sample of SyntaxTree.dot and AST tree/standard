@@ -1,0 +1,28 @@
+int a;
+int m[5];
+
+int f(int m, int n)
+{
+	int x;
+	x=1;
+	{
+		x=10;
+	}
+	if(x>x)
+		x=x+1;
+	while (x!=2)
+	{
+		if (1<2)
+			x=m+3-2;
+		else
+			x=a;
+	}
+	return 1;
+}
+
+void main(void)
+{
+	a=f(2,1);
+	m[0]=1;
+}
+
